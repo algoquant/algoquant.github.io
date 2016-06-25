@@ -1,14 +1,14 @@
 ---
+title: R programs and packages
+subtitle: R programs and packages for exploring quantitative investing.
 permalink: /R_programs/
 layout: default
-title: R programs for quantitative investing
-type: "pages"
-subtitle: R programs for exploring quantitative investing.
+type: page
 ---
 
 ### Here is some R code:  
 
-```
+```r
 summary(cars)
 plot(cars)
 ```
@@ -16,7 +16,7 @@ plot(cars)
 
 ### Create a plot using ggplot2:  
 
-```
+```r
 # load ggplot2 silently
 set.seed(1)
 mydf <- data.frame(x=rnorm(5e4),y=rnorm(5e4))

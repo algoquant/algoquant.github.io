@@ -1,27 +1,37 @@
 # Site settings
-include: ["_pages"]
+title: algoquant Home
+description: algoquant's Home Page on GitHub
+name: algoquant.github.io
+comments: true
+disqus: algoquant
 
-# Name of your site (displayed in the header)
-author:
-  name: Jerzy Pawlowski (algoquant)
-  email: jp3900@n_y_u.edu
-  github: algoquant
-  twitter: quantwise
-  linkedin: https://www.linkedin.com/in/jerzypawlowski
-  stackoverflow: http://stackoverflow.com/users/3225258/algoquant
+# Build settings
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://algoquant.github.io/" # the base hostname & protocol for your site
+
+my_name: Jerzy Pawlowski (algoquant)
+email: jp3900@n_y_u.edu
+github: algoquant
+twitter: quantwise
+linkedin: https://www.linkedin.com/in/jerzypawlowski
+stackoverflow: http://stackoverflow.com/users/3225258/algoquant
+
+avatar: https://avatars.githubusercontent.com/algoquant
+email: jp3900@nyu.edu
+github:  algoquant
+twitter: quantwise
+
 include: ["_pages"]
 exclude: ['Gemfile', 'Gemfile.lock', 'vendor', node_modules', 'package.json', 'Gruntfile.js', 'README.md']
 gems:
   - jekyll-sitemap
   - jekyll-paginate
-name: algoquant.github.io
-title: R technologies for systematic investing
-description: > # this means to ignore newlines until "baseurl:"
-  This is algoquant's main web page on github.
-avatar: https://avatars.githubusercontent.com/algoquant
-
-url: "https://algoquant.github.io/" # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /blog
 
 # navigation bar
 navbar:
@@ -40,8 +50,3 @@ navbar-links:
     - GitHub Pages: "https://pages.github.com/"
   Author's home: "https://algoquant.github.io/"
 
-# Build settings
-theme: minima
-markdown: kramdown
-kramdown:
-  input: GFM

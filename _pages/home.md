@@ -1,14 +1,21 @@
 ---
+title: algoquant Home
+subtitle: algoquant's Home Page on GitHub
 permalink: /
-layout: page
-title: Welcome to algoquant's Website!
-type: "pages"
-subtitle: A website devoted to exploring quantitative investing.
+layout: default
+type: page
 ---
-<p align="right">
-  [![View project on GitHub][logo]][weblink]  
-</p>
+
+### Welcome to algoquant's Website!  
+
+A website devoted to exploring quantitative and systematic investing.  
+You can find more information on the following pages:  
+<ul class="pages">
+  {% for page in site.pages %}
+    <a href="{{ page.url | prepend: site.baseurl }}" style="color:blue" target="_blank"> <b>{{ page.title }}</b> </a> <br> <br>
+  {% endfor %}
+</ul>
+
+You can also click on the right sidebar to navigate the website.  
 
 
-  [weblink]: https://github.com/algoquant/algoquant.github.io  
-  [logo]: ./images/GitHub-Mark-64px.png (View project on GitHub)  

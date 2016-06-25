@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-{{ content }}
+<div class="container">
+  <h2 style="text-align:left;float:left">{{ page.title }}</h2>
+
+  <h3 style="text-align:right;float:right"> category: {{ page.categories }} <br> date: {{ page.date | date: '%B %d, %Y' }} </h3>
+  <hr style="clear:both">
+
+  {{ content }}
+
+</div>
+
+{% include disqus.html %}
+
