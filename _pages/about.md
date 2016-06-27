@@ -18,7 +18,7 @@ NYU email: <a title="NYU email"> {{ site.email }} </a>
 GitHub username: <a title="GitHub username"> {{ site.github }} </a>  
 
 GitHub repository: <a> &emsp;&emsp; </a> 
-<a href="https://github.com/algoquant/" target="_blank"> <img title="View project on GitHub" src="/images/GitHub-Mark-32px.png" /> </a>  
+<a href="{{ site.githuburl }}" target="_blank"> <img title="View project on GitHub" src="/images/GitHub-Mark-32px.png" /> </a>  
 
 LinkedIn profile: <a> &emsp;&emsp; </a> 
 <a href="https://www.linkedin.com/in/jerzypawlowski" target="_blank"> <img title="View me on LinkedIn" src="/images/Logo-2C-28px-R.png" style="width: 10%; height: 10%" /> </a>  
@@ -35,7 +35,7 @@ I was a portfolio manager at several hedge funds, including Millennium, Diamond 
 ### Teaching  
 I teach graduate courses in Applications of R in Finance, and Algorithmic Portfolio Management Using the R language.  
 My lecture slides can be found here: [lecture slides](https://drive.google.com/open?id=0Bxzva1I0t63vVGEtaXNIY1JMa00){:target="_blank"}  
-The source materials for generating the lecture slides are available on GitHub (.Rnw and .Rmd files): [lecture materials on GitHub](https://github.com/algoquant/lecture_slides){:target="_blank"}  
+The source materials for generating the lecture slides are available on GitHub (.Rnw and .Rmd files): [lecture materials on GitHub]({{ site.githuburl }}lecture_slides){:target="_blank"}  
 I have developed interactive courses on DataCamp for teaching the <a style="font-family: Courier Bold"> R </a> programming language: 
 <a href="https://www.datacamp.com/courses/1203" target="_blank"> <img title="View my course on DataCamp" src="/images/datacamp_logo.png" style="width: 25%; height: 25%" /> </a>  
 

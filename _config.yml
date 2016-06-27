@@ -1,37 +1,35 @@
-# Site settings
+# site settings
+name: algoquant.github.io
 title: algoquant Home
 description: algoquant's Home Page on GitHub
-name: algoquant.github.io
 comments: true
-disqus: algoquant
 
-# Build settings
+# build settings
+include: ["_pages"]
+exclude: ['Gemfile', 'Gemfile.lock', 'vendor', node_modules', 'package.json', 'Gruntfile.js', 'README.md']
 theme: minima
 markdown: kramdown
 kramdown:
   input: GFM
 highlighter: rouge
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://algoquant.github.io/" # the base hostname & protocol for your site
-
-my_name: Jerzy Pawlowski (algoquant)
-email: jp3900@n_y_u.edu
-github: algoquant
-twitter: quantwise
-linkedin: https://www.linkedin.com/in/jerzypawlowski
-stackoverflow: http://stackoverflow.com/users/3225258/algoquant
-
-avatar: https://avatars.githubusercontent.com/algoquant
-email: jp3900@nyu.edu
-github:  algoquant
-twitter: quantwise
-
-include: ["_pages"]
-exclude: ['Gemfile', 'Gemfile.lock', 'vendor', node_modules', 'package.json', 'Gruntfile.js', 'README.md']
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+
+# personal settings
+my_name: Jerzy Pawlowski (algoquant)
+email: jp3900@nyu.edu
+github: algoquant
+twitter: quantwise
+disqus: algoquant
+avatar: https://avatars.githubusercontent.com/algoquant
+linkedin: https://www.linkedin.com/in/jerzypawlowski
+stackoverflow: http://stackoverflow.com/users/3225258/algoquant
+
+# url settings
+githuburl: https://github.com/algoquant/
+url: "https://algoquant.github.io/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # navigation bar
 navbar:

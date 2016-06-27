@@ -1,8 +1,10 @@
-## This is the repository for algoquant's Home Page on GitHub
+### This is the repository for <a href="https://algoquant.github.io/" title="algoquant's Home Page on GitHub" target="_blank"> *algoquant's Home Page on GitHub* </a>
 
-<a href="https://algoquant.github.io" title="algoquant's Home Page on GitHub" target="_blank"></a>
+The website is hosted on GitHub Pages at <a href="https://algoquant.github.io/" title="algoquant's Home Page on GitHub" target="_blank"> https://algoquant.github.io/ </a>
 
-The website was created using Jekyll, and its theme was adapted from the 
+### Website architecture and theme
+
+The website was created using [*Jekyll*](http://jekyllrb.com), and its theme was adapted from the 
 <a href="https://github.com/pietromenna/jekyll-architect-theme" target="_blank"> Jekyll-Architect theme</a> 
 by 
 <a href="https://github.com/pietromenna" target="_blank"> Pietro Menna</a>, 
@@ -11,49 +13,149 @@ and the
 by 
 <a href="https://github.com/daattali" target="_blank"> Dean Attali</a>.
 
-You can find more information about *Jekyll* here: [Jekyll web page](http://jekyllrb.com)
+[*Jekyll*](http://jekyllrb.com) is a website generator which compiles *markdown* files into *HTML*.  You can find more information about *Jekyll* here: [*Jekyll* web page](http://jekyllrb.com)
+
+A *Jekyll theme* is a set of *HTML* and *CSS* files that determine the appearance of a website, like the fonts, colors, shading, and page layouts.  A *Jekyll theme* can be adapted to create websites with the same appearance as the theme has.  Here you can find more: [Jekyll themes](http://jekyll.tips/templates/){:target="_blank"}.  
 
 
-### Website architecture
+### Website architecture and theme
 
-The website code is written in *markdown*, *HTML*, *CSS*, *YAML*, and [*liquid*](https://shopify.github.io/liquid/).
-The website runs on several different types of files: 
+The website code is written in *markdown*, *HTML*, *CSS*, *YAML*, and [*liquid*](https://shopify.github.io/liquid/).  The website consists of directories containing several different types of files:
 
 * the website parameters and settings are in the *\_config.yml* file (written in YAML) in the *root* directory,  
-* the parameters for the Jekyll processor are in the *Gemfile* file in the *root* directory,  
+* the parameters for the *Jekyll* processor are in the *Gemfile* file in the *root* directory,  
 * the website contents are written in markdown and R Markdown files collected in the *\_pages* and *\_posts* directories,  
 * the page layouts are written in HTML files collected in the *\_layouts* and *\_includes* directories,  
 * the page designs are in CSS files collected in the *stylesheets* directory,  
 The markdown and HTML files also contain [liquid](https://shopify.github.io/liquid/) code for referencing website parameters and settings.  
 
 
-### Website download here:
+### Website download
 
+You can download the website files from here:  
 <a href="https://github.com/algoquant/algoquant.github.io/archive/master.zip" class="button">
   <small>Download theme</small>.zip file</a>  
 <a href="https://github.com/algoquant/algoquant.github.io/archive/master.tar.gz" class="button">
   <small>Download theme</small>.tar.gz file</a>
 
-Unzip the website into a folder on your computer.
+Once you have downloaded the archive, you can unzip the website files into a directory on your computer.  But be aware that my website isn't a static website theme, but rather it's a complete website, and its contents change over time.
+
+You can then replace the contents of the *markdown* files in the *\_pages* and *\_posts* directories with your own.  You must also modify the website parameters in the *\_config.yml* file.  Do the following:
+
+* replace the contents of *markdown* and *R Markdown* files,  
+* modify the website parameters in the *\_config.yml* file,  
+
+
+### Jekyll installation
+
+You can install the website on your computer, but you must first install *Ruby*, *Jekyll*, and *bundler*.  I installed the website under *Windows* (which I hate, but have been forced to use it at work, and have continued to use it due to inertia).  If you're also using *Windows*, then you can first install [chocolatey](https://chocolatey.org/){:target="_blank"}, which is a package manager for *Windows*).  
+
+You can then install *Ruby*, *Jekyll*, and *bundler* with the following commands in a *command* window, each time reopening the *command* window, and installing one by one:  
+`choco install ruby -y`  
+`gem install jekyll`  
+`gem install bundler`  
+
+You can find more detailed instructions here:  
+[install *Ruby*](https://www.ruby-lang.org/en/downloads/){:target="_blank"}  
+[install *Jekyll*](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/){:target="_blank"}  
+[install *Ruby* and *Jekyll* on *Windows*](http://jwillmer.de/blog/tutorial/how-to-install-jekyll-and-pages-gem-on-windows-10-x46){:target="_blank"}
+
+You may also need to install the *Ruby* development kit for compiling *Ruby* gems (packages that provide extra functionality):  
+[install *Ruby* devkit](https://jekyllrb.com/docs/installation/){:target="_blank"}  
+[install *Ruby* devkit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit){:target="_blank"}  
 
 
 ### Website installation
 
-You can install the website on your computer, before you upload it to GitHub.  
-You must first install *Ruby* and *Jekyll*.  You must then install *bundler* and run it to install all the website dependencies. 
-You can find instructions here:  
-[install Ruby](https://www.ruby-lang.org/en/downloads/)  
-[install Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+[*Jekyll*](http://jekyllrb.com) is a website generator which compiles *markdown* files containing the website content, together with *HTML* and *CSS* theme files, into *HTML* files ready to be served on the website.  
 
-Open a *command* window and perform the commands. 
+After you've installed *Ruby*, *Jekyll*, and *bundler*, you can then install the website on your computer, by opening a *command* window, navigating to the website directory, and executing the following commands:  
+`bundle install`  
+`bundle exec jekyll serve`
+
+If you later add gems in the *\_config.yml* file, then you may need to execute the commands:  
+`bundle update`  
+`bundle exec jekyll serve`
+
+The command `jekyll serve` builds the static website files in the *\_site* sub-directory, and starts a web server running locally on your computer.  You can view the website in your browser under the address:  
+<a href="http://localhost:4000/" title="website on your computer" target="_blank"> http://localhost:4000/ </a>
+
+The command `bundle exec jekyll serve` runs the [*Ruby bundler*](http://bundler.io/){:target="_blank"} which builds the website using all the gems specified in the *Gemfile*, and manages all the software dependencies.  
+The command `bundle exec jekyll serve --trace --verbose` provides extra information about the build process. 
+
+Once you're satisfied with the website build on your computer, you can then upload it to GitHub by following these instructions: [GitHub instructions](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
 
 
-### Website contents and setup
+### Adding Disqus comments, Sharing on LinkedIn
 
-You can modify the contents of the files to conform to your website's parameters, and replace the contents with yours:
+<https://harringa.com/posts/2015/12/19/adding-disqus-to-jekyll-site/>  
+<http://sgeos.github.io/jekyll/disqus/2016/02/14/adding-disqus-to-a-jekyll-blog.html>  
+<https://developer.linkedin.com/docs/share-on-linkedin>  
+<https://superdevresources.com/share-buttons-jekyll/>  
 
-* modify the *\_config.yml* file,  
-* replace the contents of markdown and R Markdown files,  
 
-Once you're satisfied with the website on your computer, you can then upload it to GitHub by following these instructions: [GitHub instructions](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
+### Additional references
+
+Here are some blogs and tutorials about building static websites on GitHub using Jekyll: 
+
+* [Very good and detailed tutorial](http://literaturegeek.com/2016/04/20/building-static-website-with-jekyll-github-pages){:target="_blank"}  
+* [Jekyll Now for easy building of websites (I haven't used it)](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/){:target="_blank"}  
+* [Jekyll home](http://jekyllrb.com/docs/home/){:target="_blank"}  
+* [Jekyll tutorials](http://jekyll.tips/){:target="_blank"}  
+* [Jekyll file structure](http://jekyll.tips/jekyll-casts/jekyll-file-structure/){:target="_blank"}  
+* [Install Jekyll on Windows](http://jekyll.tips/jekyll-casts/install-jekyll-on-windows/){:target="_blank"}  
+* [Jekyll themes](http://jekyll.tips/templates/){:target="_blank"}  
+
+GitHub Pages help:  
+<https://pages.github.com/>
+<https://help.github.com/categories/github-pages-basics/>  
+<https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/>  
+<https://help.github.com/articles/creating-pages-with-the-automatic-generator/>  
+<https://help.github.com/articles/configuring-jekyll/>  
+<https://help.github.com/articles/user-organization-and-project-pages/>  
+<https://help.github.com/categories/customizing-github-pages/>  
+<https://blog.r3bl.me/en/jekyll-blogging-like-a-pro/>  
+
+
+### Nice Jekyll themes
+
+[repository of Jekyll themes](https://github.com/jekyll/jekyll/wiki/Themes){:target="_blank"}  
+[simple and customizable Jekyll theme](https://github.com/mmistakes/skinny-bones-jekyll){:target="_blank"}  
+[simple Jekyll theme with menu and sidebar](https://github.com/scotte/jekyll-clean){:target="_blank"}  
+[fancy Jekyll theme with menu and sidebar](https://github.com/tomjohnson1492/documentation-theme-jekyll){:target="_blank"}  
+[Jekyll theme with sidebar](https://github.com/JustusAdam/justusadam.github.io){:target="_blank"}  
+<https://github.com/mmistakes/so-simple-theme>  
+<>  
+
+Create template Jekyll directory with this command (uses very simple page layout and theme):  
+`bundle exec jekyll new C:/Develop/web/site_template --force`
+
+
+### More references about building websites on GitHub using Jekyll
+
+<https://ines.io/blog/the-ultimate-guide-static-websites-jekyll>  
+<https://davidwalsh.name/introduction-static-site-generators>  
+<https://mademistakes.com/articles/using-jekyll-2016/>  
+
+
+## Below are more references about building websites
+
+### Building websites using *R Markdown* and *knitr*
+
+I use *R* for all my work, so in the future I may also try building my websites using *R Markdown* and *knitr*.  Here are some references about building websites using *R Markdown* and *knitr*:
+
+[*R Markdown* websites](https://rmarkdown.rstudio.com/rmarkdown_websites.html){:target="_blank"}  
+[Building websites using *R Markdown* and *knitr*](https://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/){:target="_blank"}  
+
+<https://github.com/yihui/knitr-jekyll>  
+<https://github.com/yihui/servr>  
+<https://github.com/homerhanumat/homerhanumat.github.io>  
+<http://statistics.rainandrhino.org/knitr-hyde/>  
+<http://statistics.rainandrhino.org/knitr-lanyon/>  
+<http://statistics.rainandrhino.org/2015/12/15/jekyll-r-blogger-knitr-hyde.html>  
+<http://www.sciviews.org/blog/The-SciViews-Jekyll-Template/>  
+<https://help.github.com/articles/using-a-custom-domain-with-github-pages/>  
+
+[Hacking *htmlwidgets* into website using *rmarkdown*](https://brendanrocks.com/htmlwidgets-knitr-jekyll/){:target="_blank"}  
+[Hacking *htmlwidgets* into website using *Jekyll*](http://benjcunningham.org/2016/06/13/hacking-together-htmlwidgets-for-jekyll.html){:target="_blank"}  
 
