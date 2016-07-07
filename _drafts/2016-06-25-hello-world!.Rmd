@@ -3,6 +3,7 @@ title: Hello World!
 date:   2016-06-25 12:00:00
 layout: post
 categories: websites
+output: html_document
 ---
 
 ### I finally took the time to set up my home page on GitHub

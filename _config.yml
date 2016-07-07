@@ -1,10 +1,20 @@
-# site settings
+### site settings
+
 name: algoquant.github.io
 title: algoquant Home
 description: algoquant's Home Page on GitHub
 comments: true
 
-# build settings
+
+### url settings
+
+githuburl: https://github.com/algoquant/
+url: "https://algoquant.github.io/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+
+
+### build settings
+
 include: ["_pages"]
 exclude: ['Gemfile', 'Gemfile.lock', 'vendor', node_modules', 'package.json', 'Gruntfile.js', 'README.md']
 theme: minima
@@ -12,11 +22,14 @@ markdown: kramdown
 kramdown:
   input: GFM
 highlighter: rouge
+permalink: pretty  # remove .html from urls
 gems:
   - jekyll-sitemap
   - jekyll-paginate
 
-# personal settings
+
+### personal settings
+
 my_name: Jerzy Pawlowski (algoquant)
 email: jp3900@nyu.edu
 github: algoquant
@@ -26,10 +39,6 @@ avatar: https://avatars.githubusercontent.com/algoquant
 linkedin: https://www.linkedin.com/in/jerzypawlowski
 stackoverflow: http://stackoverflow.com/users/3225258/algoquant
 
-# url settings
-githuburl: https://github.com/algoquant/
-url: "https://algoquant.github.io/" # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /blog
 
 # navigation bar
 navbar:

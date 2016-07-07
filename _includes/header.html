@@ -1,7 +1,7 @@
 <header>
   <div class="inner">
-    <h2> {{ site.name }} </h2>
+    <a href="{{ site.url }}" target="_blank"> <h2> {{ site.name }} </h2> </a>
     <h1> {{ page.title }} </h1>
-    <a href="https://github.com/algoquant/algoquant.github.io" class="button" target="_blank"><small>View project on</small> GitHub</a>
+    <a href="{{ site.name | prepend: site.githuburl }}" class="button" target="_blank"><small>View project on</small> GitHub</a>
   </div>
 </header>

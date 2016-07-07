@@ -2,7 +2,7 @@
 
 The website is hosted on GitHub Pages at <a href="https://algoquant.github.io/" title="algoquant's Home Page on GitHub" target="_blank"> https://algoquant.github.io/ </a>
 
-### Website architecture and theme
+### Website design
 
 The website was created using [*Jekyll*](http://jekyllrb.com), and its theme was adapted from the 
 <a href="https://github.com/pietromenna/jekyll-architect-theme" target="_blank"> Jekyll-Architect theme</a> 
@@ -15,10 +15,10 @@ by
 
 [*Jekyll*](http://jekyllrb.com) is a website generator which compiles *markdown* files into *HTML*.  You can find more information about *Jekyll* here: [*Jekyll* web page](http://jekyllrb.com)
 
-A *Jekyll theme* is a set of *HTML* and *CSS* files that determine the appearance of a website, like the fonts, colors, shading, and page layouts.  A *Jekyll theme* can be adapted to create websites with the same appearance as the theme has.  Here you can find more: [Jekyll themes](http://jekyll.tips/templates/){:target="_blank"}.  
+A *Jekyll theme* is a set of *HTML* and *CSS* files that determine the appearance of a website, like the fonts, colors, shading, and page layouts.  A *Jekyll theme* can be adapted to create websites with the same appearance as the theme has.  Here you can find more: <a href="http://jekyll.tips/templates/" target="_blank">*Jekyll themes*</a>  
 
 
-### Website architecture and theme
+### Website structure
 
 The website code is written in *markdown*, *HTML*, *CSS*, *YAML*, and [*liquid*](https://shopify.github.io/liquid/).  The website consists of directories containing several different types of files:
 
@@ -48,7 +48,7 @@ You can then replace the contents of the *markdown* files in the *\_pages* and *
 
 ### Jekyll installation
 
-You can install the website on your computer, but you must first install *Ruby*, *Jekyll*, and *bundler*.  I installed the website under *Windows* (which I hate, but have been forced to use it at work, and have continued to use it due to inertia).  If you're also using *Windows*, then you can first install [chocolatey](https://chocolatey.org/){:target="_blank"}, which is a package manager for *Windows*).  
+You can install the website on your computer, but you must first install *Ruby*, *Jekyll*, and *bundler*.  I installed the website under *Windows* (which I hate, but have been forced to use it at work, and have continued to use it due to inertia).  If you're also using *Windows*, then you can first install <a href="https://chocolatey.org/" target="_blank">*chocolatey*</a>, which is a package manager for *Windows*).  
 
 You can then install *Ruby*, *Jekyll*, and *bundler* with the following commands in a *command* window, each time reopening the *command* window, and installing one by one:  
 `choco install ruby -y`  
@@ -56,18 +56,18 @@ You can then install *Ruby*, *Jekyll*, and *bundler* with the following commands
 `gem install bundler`  
 
 You can find more detailed instructions here:  
-[install *Ruby*](https://www.ruby-lang.org/en/downloads/){:target="_blank"}  
-[install *Jekyll*](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/){:target="_blank"}  
-[install *Ruby* and *Jekyll* on *Windows*](http://jwillmer.de/blog/tutorial/how-to-install-jekyll-and-pages-gem-on-windows-10-x46){:target="_blank"}
+<a href="https://www.ruby-lang.org/en/downloads/" target="_blank">install *Ruby*</a>  
+<a href="https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/" target="_blank">install *Jekyll*</a>  
+<a href="http://jwillmer.de/blog/tutorial/how-to-install-jekyll-and-pages-gem-on-windows-10-x46" target="_blank">install *Ruby* and *Jekyll* on Windows</a>
 
 You may also need to install the *Ruby* development kit for compiling *Ruby* gems (packages that provide extra functionality):  
-[install *Ruby* devkit](https://jekyllrb.com/docs/installation/){:target="_blank"}  
-[install *Ruby* devkit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit){:target="_blank"}  
+<a href="https://jekyllrb.com/docs/installation/" target="_blank">install *Ruby devkit* installation </a>  
+<a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit" target="_blank"> install *Ruby devkit* installer </a>
 
 
 ### Website installation
 
-[*Jekyll*](http://jekyllrb.com) is a website generator which compiles *markdown* files containing the website content, together with *HTML* and *CSS* theme files, into *HTML* files ready to be served on the website.  
+<a href="http://jekyllrb.com" target="_blank"> *Jekyll* </a> is a website generator which compiles *markdown* files containing the website content, together with *HTML* and *CSS* theme files, into *HTML* files ready to be served on the website.  
 
 After you've installed *Ruby*, *Jekyll*, and *bundler*, you can then install the website on your computer, by opening a *command* window, navigating to the website directory, and executing the following commands:  
 `bundle install`  
@@ -80,10 +80,10 @@ If you later add gems in the *\_config.yml* file, then you may need to execute t
 The command `jekyll serve` builds the static website files in the *\_site* sub-directory, and starts a web server running locally on your computer.  You can view the website in your browser under the address:  
 <a href="http://localhost:4000/" title="website on your computer" target="_blank"> http://localhost:4000/ </a>
 
-The command `bundle exec jekyll serve` runs the [*Ruby bundler*](http://bundler.io/){:target="_blank"} which builds the website using all the gems specified in the *Gemfile*, and manages all the software dependencies.  
+The command `bundle exec jekyll serve` runs the <a href="http://bundler.io/" target="_blank"> *Ruby bundler* </a> which builds the website using all the gems specified in the *Gemfile*, and manages all the software dependencies.  
 The command `bundle exec jekyll serve --trace --verbose` provides extra information about the build process. 
 
-Once you're satisfied with the website build on your computer, you can then upload it to GitHub by following these instructions: [GitHub instructions](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
+Once you're satisfied with the website build on your computer, you can then upload it to GitHub by following these instructions: <a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/" target="_blank"> *GitHub* instructions </a>
 
 
 ### Adding Disqus comments, Sharing on LinkedIn
@@ -98,13 +98,20 @@ Once you're satisfied with the website build on your computer, you can then uplo
 
 Here are some blogs and tutorials about building static websites on GitHub using Jekyll: 
 
-* [Very good and detailed tutorial](http://literaturegeek.com/2016/04/20/building-static-website-with-jekyll-github-pages){:target="_blank"}  
-* [Jekyll Now for easy building of websites (I haven't used it)](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/){:target="_blank"}  
-* [Jekyll home](http://jekyllrb.com/docs/home/){:target="_blank"}  
-* [Jekyll tutorials](http://jekyll.tips/){:target="_blank"}  
-* [Jekyll file structure](http://jekyll.tips/jekyll-casts/jekyll-file-structure/){:target="_blank"}  
-* [Install Jekyll on Windows](http://jekyll.tips/jekyll-casts/install-jekyll-on-windows/){:target="_blank"}  
-* [Jekyll themes](http://jekyll.tips/templates/){:target="_blank"}  
+* <a href="http://literaturegeek.com/2016/04/20/building-static-website-with-jekyll-github-pages" target="_blank"> Very good and detailed tutorial </a>
+* <a href="https://24ways.org/2013/get-started-with-github-pages/" target="_blank"> Simple tutorial </a>
+
+http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/  
+http://pixelcog.com/blog/2013/jekyll-from-scratch-core-architecture/  
+http://pixelcog.com/blog/2013/jekyll-from-scratch-extending-jekyll/
+
+
+* <a href="http://jekyllrb.com/docs/home/" target="_blank"> *Jekyll* home </a>
+* <a href="http://jekyll.tips/" target="_blank">*Jekyll* tutorials</a>
+* <a href="http://jekyll.tips/jekyll-casts/jekyll-file-structure/" target="_blank">*Jekyll* file structure</a>
+* <a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/" target="_blank"> *Jekyll Now* for easy building of websites (I haven't used it) </a>
+* <a href="http://jekyll.tips/jekyll-casts/install-jekyll-on-windows/" target="_blank">Install *Jekyll* on Windows</a>
+* <a href="http://jekyll.tips/templates/" target="_blank"> *Jekyll themes* </a>
 
 GitHub Pages help:  
 <https://pages.github.com/>
@@ -119,15 +126,14 @@ GitHub Pages help:
 
 ### Nice Jekyll themes
 
-[repository of Jekyll themes](https://github.com/jekyll/jekyll/wiki/Themes){:target="_blank"}  
-[simple and customizable Jekyll theme](https://github.com/mmistakes/skinny-bones-jekyll){:target="_blank"}  
-[simple Jekyll theme with menu and sidebar](https://github.com/scotte/jekyll-clean){:target="_blank"}  
-[fancy Jekyll theme with menu and sidebar](https://github.com/tomjohnson1492/documentation-theme-jekyll){:target="_blank"}  
-[Jekyll theme with sidebar](https://github.com/JustusAdam/justusadam.github.io){:target="_blank"}  
-<https://github.com/mmistakes/so-simple-theme>  
+* <a href="https://github.com/jekyll/jekyll/wiki/Themes" target="_blank"> repository of *Jekyll themes* </a>
+* <a href="https://github.com/mmistakes/skinny-bones-jekyll" target="_blank"> simple and customizable *Jekyll* theme </a>
+* <a href="https://github.com/scotte/jekyll-clean" target="_blank"> simple *Jekyll* theme with menu and sidebar </a>
+* <a href="https://github.com/tomjohnson1492/documentation-theme-jekyll" target="_blank"> fancy *Jekyll* theme with menu and sidebar </a>
+* <a href="https://github.com/JustusAdam/justusadam.github.io" target="_blank"> *Jekyll* theme with sidebar </a>
 <>  
 
-Create template Jekyll directory with this command (uses very simple page layout and theme):  
+Command for creating template Jekyll directory (uses very simple page layout and theme):  
 `bundle exec jekyll new C:/Develop/web/site_template --force`
 
 
@@ -144,8 +150,8 @@ Create template Jekyll directory with this command (uses very simple page layout
 
 I use *R* for all my work, so in the future I may also try building my websites using *R Markdown* and *knitr*.  Here are some references about building websites using *R Markdown* and *knitr*:
 
-[*R Markdown* websites](https://rmarkdown.rstudio.com/rmarkdown_websites.html){:target="_blank"}  
-[Building websites using *R Markdown* and *knitr*](https://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/){:target="_blank"}  
+* <a href="https://rmarkdown.rstudio.com/rmarkdown_websites.html" target="_blank"> R Markdown websites </a>
+* <a href="https://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/" target="_blank"> Building websites using R Markdown and knitr </a>
 
 <https://github.com/yihui/knitr-jekyll>  
 <https://github.com/yihui/servr>  
