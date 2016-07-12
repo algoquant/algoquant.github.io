@@ -1,6 +1,6 @@
 ---
 title: Unit Testing Using Packages testthat and devtools
-date:   2016-07-02 12:00:00
+date:   2016-07-09 12:00:00
 layout: post
 categories: development testing
 output: html_document
