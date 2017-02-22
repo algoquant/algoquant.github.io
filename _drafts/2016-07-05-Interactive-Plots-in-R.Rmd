@@ -8,7 +8,7 @@ output: html_document
 
 ### Publishing *R Markdown* documents containing interactive plots
 
-One of the advantages of writing *R Markdown* documents is that they can be compiled into *HTML* documents, which can incorporate interactive plots.  This post is an *R Markdown* document that was compiled into an *HTML* document, and can be found in algoquant's *GitHub* repository here: <a href="https://github.com/algoquant/algoquant.github.io/tree/master/_drafts/2016-07-06-interactive-plots.Rmd" title="R interactive plots" target="_blank"> R interactive plots </a>
+One of the advantages of writing *R Markdown* documents is that they can be compiled into *HTML* documents, which can incorporate interactive plots.  This post is an *R Markdown* document that was compiled into an *HTML* document, and can be found in algoquant's *GitHub* repository here: <a href="https://github.com/algoquant/algoquant.github.io/blob/master/_drafts/2016-07-05-Interactive-Plots-in-R.Rmd" title="R interactive plots" target="_blank"> R interactive plots </a>
 
 Before creating interactive plots, we need to install the package *rutils* from *GitHub*:  
 ```{r eval=FALSE}
