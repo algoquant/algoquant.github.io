@@ -77,8 +77,6 @@ If the look-back window length $L$ is small, then fewer prices are used and the 
 The effect of the decay factor $\lambda$ on the moving average prices is illustrated in the animated plot below of VTI stock prices.  When $\lambda = 0.99$ the average prices are very smooth, and they lag behind the streaming prices.
 But as $\lambda$ decreases, the average prices become more variable and they follow the streaming prices more closely.  
 
-<p><video src="figure/EMA.mp4" width="600" height="500" controls playsinline autoplay muted loop/></p>
-
 <br>
 
 **The moving average prices are less volatile (smoother), but they also lag behind the streaming prices - they are *biased*.**  
