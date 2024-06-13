@@ -2,9 +2,8 @@
 title: "The Moving Average Prices And Volatilities"
 author: "Jerzy Pawlowski (jpawlowski@machinetrader.io)"
 date: "06/11/2024"
-output:
-  html_document: default
-  pdf_document: default
+layout: post
+output: html_document
 email: jpawlowski@machinetrader.io
 affiliation: MachineTrader.io
 ---
