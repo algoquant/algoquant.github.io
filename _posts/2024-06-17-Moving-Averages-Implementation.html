@@ -11,7 +11,7 @@
 
 <meta name="author" content="Jerzy Pawlowski (jpawlowski@machinetrader.io)" />
 
-<meta name="date" content="2024-06-10" />
+<meta name="date" content="2024-06-17" />
 
 <title>Implementation of the Moving Average Prices And Volatilities</title>
 
@@ -353,7 +353,7 @@ display: none;
 <h1 class="title toc-ignore">Implementation of the Moving Average Prices
 And Volatilities</h1>
 <h4 class="author">Jerzy Pawlowski (<a href="mailto:jpawlowski@machinetrader.io" class="email">jpawlowski@machinetrader.io</a>)</h4>
-<h4 class="date">06/10/2024</h4>
+<h4 class="date">06/17/2024</h4>
 
 </div>
 
@@ -367,22 +367,23 @@ including the moving average prices and volatilities.</p>
 prices and volatilities from live streaming stock prices for a single
 selected stock.</p>
 <p>You can download the tab named <em>Tech Indicators</em> from the
-MachineTrader-Community repository on GitHub by clicking on this <a href="https://github.com/predictivetechnologysystems/MachineTrader-Community/blob/main/Tech_Indicators.json"><strong>link</strong></a>.<br />
-After you download the <em>JavaScript</em> file named
-<em>Tech_Indicators.json</em> to your computer, you can then upload it
-to your MachineTrader instance.</p>
-<p>The <em>Tech Indicators</em> tab requires importing two other tabs
-into your MachineTrader instance.</p>
-<p>You also need to install the tab named <a href="https://github.com/predictivetechnologysystems/MachineTrader-Community/blob/main/Alpaca_Prices.json"><strong>Alpaca
-Prices</strong></a> for downloading the streaming (live) stock prices
-from Alpaca.</p>
-<p>You also need to install the tab named <a href="https://github.com/predictivetechnologysystems/MachineTrader-Community/blob/main/Globals_Utilities.json"><strong>Globals/Utilities</strong></a>
-for creating global variables.</p>
-<p>After you install the tabs, you must connect the <em>link-in
-node</em> to the left of the function node named <em>Get stock
-price</em> in the <em>Tech Indicators</em> tab, to the <em>link-out
-node</em> called <em>Prices out</em> in the tab <em>Alpaca
-Prices</em>.</p>
+MachineTrader-Community repository on GitHub by clicking on this <a href="https://drive.google.com/uc?export=download&amp;id=1gOpD8O4JOah5xTCVcmQi4qNdmSVliTgr"><strong>link</strong></a>.</p>
+<p>After you download the <em>JavaScript</em> file named
+<em>Tech_Indicators.json</em> to your computer, you should then install
+it in your MachineTrader instance, to create the tab named <em>Tech
+Indicators</em>.</p>
+<p>The tab <em>Tech Indicators</em> receives the streaming stock prices
+from Alpaca, from the tab named <em>Alpaca Prices</em>, which is already
+included in your MachineTrader instance.<br />
+The tab <em>Tech Indicators</em> also relies on the global variables
+produced by the tab named <em>Globals/Utilities</em>.</p>
+<p>After you install the tab <em>Tech Indicators</em>, you must connect
+the <em>link-in node</em> to the left of the function node named <em>Get
+stock price</em>, to the <em>link-out node</em> called <em>Prices
+out</em> in the tab <em>Alpaca Prices</em>.</p>
+<p>You can read more about the moving average prices and volatilities in
+<a href="https://algoquant.github.io/2024/06/13/Moving-Averages-Theory/"><strong>this
+document</strong></a>.</p>
 <p>You can also watch an instructional video about <a href="https://youtu.be/iAZMTEZeZDM"><strong>Calculating Moving Average
 Prices And Volatilities</strong></a> on the MachineTrader YouTube
 channel.</p>
